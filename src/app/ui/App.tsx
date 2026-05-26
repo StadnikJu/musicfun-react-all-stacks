@@ -1,5 +1,5 @@
-import { Header } from "@/common/components/Header/Header";
-import { Routing } from "@/common/routing/Routing";
+import { Header } from "@/common/components";
+import { Routing } from "@/common/routing";
 import s from "./App.module.css";
 
 export function App() {
