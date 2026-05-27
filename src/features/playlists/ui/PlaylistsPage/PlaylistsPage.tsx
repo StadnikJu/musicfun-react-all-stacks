@@ -14,7 +14,6 @@ export const PlaylistsPage = () => {
   const { data } = useFetchPlaylistsQuery();
   const [deletePlaylist] = useDeletePlaylistMutation();
 
-
   const deletePlaylistHandler = (playlistId: string) => {
     if (confirm("Are you sure you want to delete the playlist?")) {
       deletePlaylist(playlistId);
