@@ -44,3 +44,43 @@ export type FetchPlaylistsArgs = {
   userId?: string;
   trackId?: string;
 };
+
+// Arguments
+type CreatePlaylistPayload = {
+  title: string;
+  description: string;
+};
+
+export type CreatePlaylistArgs = {
+  data: {
+    type: "playlists";
+    attributes: CreatePlaylistPayload;
+  };
+};
+
+type UpdatePlaylistPayload = {
+  title: string;
+  description: string;
+  tagIds?: string[];
+};
+
+export type UpdatePlaylistArgs = {
+  data: {
+    type: "playlists";
+    attributes: UpdatePlaylistPayload;
+  };
+};
+
+
+// type PlaylistPayload = {
+//   title: string;
+//   description: string;
+//   tagIds: string[]
+// };
+
+// export type CreatePlaylistArgs = {
+//   data: {
+//     type: 'playlists';
+//     attributes: PlaylistPayload;
+//   };
+// }
