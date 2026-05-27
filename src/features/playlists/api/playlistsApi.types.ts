@@ -70,17 +70,3 @@ export type UpdatePlaylistArgs = {
     attributes: UpdatePlaylistPayload;
   };
 };
-
-
-// type PlaylistPayload = {
-//   title: string;
-//   description: string;
-//   tagIds: string[]
-// };
-
-// export type CreatePlaylistArgs = {
-//   data: {
-//     type: 'playlists';
-//     attributes: PlaylistPayload;
-//   };
-// }
