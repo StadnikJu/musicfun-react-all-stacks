@@ -15,7 +15,7 @@ export const Pagination = ({ currentPage, pagesCount, pageSize, changePageSize, 
 
   return (
     <div className={s.container}>
-      <PaginationControls setCurrentPage={setCurrentPage} currentPage={currentPage} pagesCount={pageSize} />
+      <PaginationControls setCurrentPage={setCurrentPage} currentPage={currentPage} pagesCount={pagesCount} />
       <PageSizeSelector pageSize={pageSize} changePageSize={changePageSize} />
     </div>
   );
